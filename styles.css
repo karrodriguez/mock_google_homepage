@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background: #fff;
+
+    font-size: 14px;
+    font-family: Roboto, arial, sans-serif;
+    color: #222;
+
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+html, body {
+    min-width: 400px;
+}
+
+a {
+    color: #222;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+nav {
+    width: 100%;
+    height: 60px;
+    padding: 6px;
+
+    display: flex;
+    align-items: center;
+
+    color: #222222;
+}
+
+.leftnav:first-of-type {
+    margin-left: 15px;
+}
+
+.leftnav{
+    margin: 0 5px;
+    padding: 5px;
+
+    display: inline-block;
+
+    color: #222;
+}
+
+.rightnav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-grow: 1;
+    min-width: auto;
+    height: 48px;
+}
+
+.rightnav_links{
+    display: flex;
+}
+
+#gmail_link, #images_link {
+    padding-left: 15px;
+    margin-bottom: 2px;
+    margin-right: 1px;
+    font-size: 13px;
+}
+
+.rightnav_icons{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.grid_dots {
+    padding: 6px;
+    margin-top: 3px;
+    margin-right: 2px;
+}
+
+#grid_dots_svg:hover {
+    background-color: rgba(60, 64, 67, 0.08);
+    border-radius: 50%;
+    opacity: 1;
+}
+
+.account_icon {
+    vertical-align: middle;
+
+    padding: 6px;
+    border-radius: 50%;
+}
+
+.google_logo_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 92px;
+    max-height: 290px;
+    height: calc(100% - 560px);
+}
+
+.logo {
+    max-height: 92px;
+    height: 100%;
+    margin-top: auto;
+}
+
+#google_logo_img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    object-position: center bottom;
+    width: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-height: 160px;
+    position: relative;
+
+}
+
+.searchbox {
+    flex: 1;
+    border: 1px solid #dfe1e5;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    width: 100%;
+    min-width: 350px;
+    max-width: 584px;
+    border-radius: 24px;
+    height: 46px;
+    margin-top: 6px;
+}
+
+.searchbox:hover {
+    box-shadow: 0 1px 6px rgba(32, 33, 36, .28);
+    border-color: rgba(223, 225, 229, 0);
+    background-color: #fff;
+}
+
+.searchbar_input {
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+}
+
+#search_input {
+    flex: 100%;
+    height: 39px;
+    padding: 0;
+    border: none;
+    outline: none;
+
+    text-align: start;
+    font-size: 16px;
+    word-wrap: break-word;
+    margin-bottom: 5px;
+}
+
+.search_icon {
+    align-self: center;
+    margin-left: 14px;
+    padding-right: 13px;
+    padding-top: 2px;
+}
+
+.microphone_icon {
+    display: flex;
+}
+
+.buttons {
+    height: 70px;
+    padding-top: 18px;
+    top: 53px;
+}
+
+button {
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    background-color: #f8f9fa;
+    color: #3c4043;
+    font-size: 14px;
+    text-align: center;
+
+    margin: 11px 4px;
+    padding: 0 16px;
+    height: 36px;
+    min-width: 54px;
+}
+
+button:hover {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+    border: 1px solid #dadce0;
+    color: #202124
+}
+
+.random_prompt {
+    flex-grow: 1;
+    text-align: center;
+    font-size: small;
+    margin-right: 3px;
+}
+
+footer {
+    background: #f2f2f2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.left_footer {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: flex-start;
+    min-width: 30%;
+}
+
+.carbon_neutral {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+}
+
+#google-leaf {
+    height: 14px;
+    margin-right: 6px;
+}
+
+.right_footer {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: flex-end;
+    min-width: 30%;
+}
+
+.footer_text {
+    display: block;
+    padding: 15px;
+    white-space: nowrap;
+}
